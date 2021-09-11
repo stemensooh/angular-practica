@@ -1,0 +1,13 @@
+{
+  "endpoints_api": {
+    "url_api": "http://localhost:8563/",
+    "url_api2": "https://webapigssim.gurusoft-development.com/gsedocpymeapi/"
+  },
+  "resources_api": {
+    "gssim": [{
+      "name": "log-out",
+      "description": "close session in the database",
+      "uri": "api/account/logout"
+    }]
+  }
+}

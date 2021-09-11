@@ -1,0 +1,15 @@
+{
+  "endpoints_api":{
+    "url_api":"https://34.225.177.198/gsedocpymeapi/"
+  },
+  "resources_api":{
+    "gssim": [
+      {
+        "name":"log-out",
+        "description": "close session in the database",
+        "uri":"api/account/logout"
+      }
+    ]
+
+  }
+}
