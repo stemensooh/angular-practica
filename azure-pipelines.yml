@@ -21,3 +21,11 @@ steps:
     ng build --prod
   displayName: 'npm install and build'
 
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure para estudiantes(224b43c8-bb64-4ccf-b844-42375d0ccdcd)'
+    appType: 'webAppLinux'
+    WebAppName: 'angular-practica-linux'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'NODE|14-lts'
