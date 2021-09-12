@@ -1,4 +1,14 @@
 # Node.js with Angular
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure para estudiantes(224b43c8-bb64-4ccf-b844-42375d0ccdcd)'
+    appType: 'webApp'
+    WebAppName: 'angular-practica-windows'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'angular'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
