@@ -29,3 +29,10 @@ steps:
     appType: 'webApp'
     WebAppName: 'angular-practica-windows'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'dist'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
